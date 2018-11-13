@@ -142,6 +142,7 @@ section {
     height: 100%;
     overflow: hidden;
     z-index: 0;
+    background: url("../img/hero-bg.jpg") 50% no-repeat;
     background-size: cover;
     pointer-events: none; }
     .wrapper-hero .fullscreen-bg__video {
@@ -152,6 +153,9 @@ section {
       position: absolute;
       min-width: 100%;
       min-height: 100%; }
+      @media (max-width: 660px) {
+        .wrapper-hero .fullscreen-bg__video {
+          display: none; } }
     .wrapper-hero .fullscreen-bg::after {
       top: 0;
       left: 0;

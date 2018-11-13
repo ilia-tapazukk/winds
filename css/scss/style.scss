@@ -71,7 +71,7 @@ section{
         height: 100%;
         overflow: hidden;
         z-index: 0;
-        // background: url('~/assets/ico/img/screen.jpg') 50% no-repeat;
+        background: url('../img/hero-bg.jpg') 50% no-repeat;
         background-size: cover;
         pointer-events: none;
 
@@ -83,6 +83,9 @@ section{
             position: absolute;
             min-width: 100%;
             min-height: 100%;
+            @include sm{
+                display: none;
+            }
         }
         &::after{
         top: 0;
