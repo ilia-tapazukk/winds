@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import "reset";
+@import "mixin";
+@import "city-navigation";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+body{
+    background: #fff;
+    color: #333;
+    font-size: 4vw;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+section{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+}
+.wrapper-hero{
+   background-size: cover;  
+   position: relative;
+   color: #fff;
+   text-shadow: 0 -1px 0 #000;
+   background: #004e8f;
+    .text{
+        position: relative;
+        z-index: 1;
+        text-align: center;        
+    }
+    h1{
+        font-size: 7vw;    
+        padding: .5em 0 0 0;
+        letter-spacing: 4px;
+        @include sm{
+            font-size: 4rem;
+            padding-top: 9rem;
+        }
+    }
+    .logo{
+        position: relative;
+        z-index: 1;
+        max-width: 910px;
+        margin: auto;
+        img{
+            width: 100%;
+        }
+    }
+    article{
+        position: relative;
+        z-index: 1;
+    }
+    // video
+    .fullscreen-bg {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 0;
+        // background: url('~/assets/ico/img/screen.jpg') 50% no-repeat;
+        background-size: cover;
+        pointer-events: none;
+
+        &__video {
+            top: 0;
+            left: 0;
+            width: auto;
+            height: auto;
+            position: absolute;
+            min-width: 100%;
+            min-height: 100%;
+        }
+        &::after{
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        content: '';
+        background: rgba(#000, 0.2);
+        }
+    }
+}

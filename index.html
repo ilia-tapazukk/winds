@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test CP logo</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>    
+    <script src="js/jquery.fullpage.min.js"></script>
+	<script src='js/app.js'></script>
+</head>
+<body>
+	<div id="fullPage">
+		<section class='section wrapper-hero'>
+			<article>				
+				<div class="logo" id="logo-wrapper">
+					<img src="img/logo_wings_svg.svg" alt="Крылья" >	
+				</div>
+				
+				<h1 id="slogan" class="text">Почувствуй небо</h1>
+				
+			</article>
+
+			<div class="fullscreen-bg">
+			    <video loop muted autoplay class="fullscreen-bg__video">
+			      <source src="video/bg.mp4" type="video/mp4" />
+			      <!-- <source src="video/v.webm" type="video/webm" /> -->
+			    </video>
+		  	</div>
+		</section>
+		<section class='wrapper section city-navigation'>
+			<article>				
+				<h1>Полёт в подарок!</h1>
+				<ul class="city-path">
+					<li>
+						<h2>Москва</h2>
+					</li>
+					<li>
+						<h2>Санкт-Петербург</h2>
+					</li>
+				</ul>	
+
+			</article>
+		</section>
+	</div>	
+</body>
+</html>
